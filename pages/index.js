@@ -27,6 +27,10 @@ export const getStaticProps = async () => {
 
   $\\alpha$
 
+  $$
+  y = ax + b
+  $$
+
   \`\`\`python
   print("Hello")
   \`\`\`
@@ -35,7 +39,6 @@ export const getStaticProps = async () => {
   `.trim();
 
   const source = await mdxToHtml(mdxSource);
-  console.log("source", source);
   return {
     props: {
       source,
